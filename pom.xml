@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.miage</groupId>
+	<artifactId>CRM365</artifactId>
+
+	<packaging>war</packaging>
+
+	<developers>
+		<developer>
+			<name>Tarik Djebien</name>
+		</developer>
+		<developer>
+			<name>Eric Sitraka Rakotobe</name>
+		</developer>
+		<developer>
+			<name>Rudy Stienne</name>
+		</developer>
+		<developer>
+			<name>Antoine Craske</name>
+		</developer>
+	</developers>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<spring.version>3.1.0.RELEASE</spring.version>
+		<jetty.port>8080</jetty.port>
+		<java.version>1.6</java.version>
+		<webapp.dir>${basedir}/src/main/webapp</webapp.dir>
+		<config.dir>${webapp.dir}/WEB-INF</config.dir>
+		<database.scripts.dir>${webapp.dir}/BDD</database.scripts.dir>
+		<selenium.tests.dir>com/miage/crm365/selenium/*.java</selenium.tests.dir>
+		<aspectj.weaver.version>1.5.2</aspectj.weaver.version>
+		<cglib.version>2.1_3</cglib.version>
+	</properties>
+
+	<version>2.5</version>
+	<name>CRM 365</name>
+	<description>CRM events centralization application</description>
+
+	<prerequisites>
+		<maven>2.0.4</maven>
+	</prerequisites>
+
+	<dependencies>
+
+		<!-- API JSP et Servlet JEE -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.0</version>
+			<scope>provided</scope>
+		</dependency>
+
+
+		<!-- Gestion des traces et des logs -->
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.16</version>
+		</dependency>
+
+
+
+		<!-- Datasource pour la connexion a la BDD en production -->
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>1.4</version>
+		</dependency>
+
+
+		<!-- Driver SGBD MYSQL -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.0.5</version>
+		</dependency>
+
+		<!-- Pour l'injection de dependance avec l'annotation @Resource -->
+		<dependency>
+			<groupId>javax.annotation</groupId>
+			<artifactId>jsr250-api</artifactId>
+			<version>1.0</version>
+		</dependency>
+
+
+		<!-- TEST UNITAIRE -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.8.1</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>1.9.0</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- SPRING IOC -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>com.springsource.org.apache.commons.beanutils</artifactId>
+					<groupId>org.apache.commons</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>com.springsource.org.aopalliance</artifactId>
+					<groupId>org.aopalliance</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>${spring.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>com.springsource.org.apache.commons.beanutils</artifactId>
+					<groupId>org.apache.commons</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>com.springsource.org.aopalliance</artifactId>
+					<groupId>org.aopalliance</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>com.springsource.org.apache.commons.beanutils</artifactId>
+					<groupId>org.apache.commons</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>com.springsource.org.aopalliance</artifactId>
+					<groupId>org.aopalliance</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>${spring.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>com.springsource.org.apache.commons.beanutils</artifactId>
+					<groupId>org.apache.commons</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>com.springsource.org.aopalliance</artifactId>
+					<groupId>org.aopalliance</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!-- SPRING Aspect Oriented Programming (AOP) -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>${spring.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>com.springsource.org.apache.commons.beanutils</artifactId>
+					<groupId>org.apache.commons</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>com.springsource.org.aopalliance</artifactId>
+					<groupId>org.aopalliance</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>${aspectj.weaver.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib-nodep</artifactId>
+			<version>${cglib.version}</version>
+		</dependency>
+
+		<!-- SPRING MVC -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>com.springsource.org.apache.commons.beanutils</artifactId>
+					<groupId>org.apache.commons</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>com.springsource.org.aopalliance</artifactId>
+					<groupId>org.aopalliance</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>com.springsource.org.apache.commons.beanutils</artifactId>
+					<groupId>org.apache.commons</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>com.springsource.org.aopalliance</artifactId>
+					<groupId>org.aopalliance</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+
+
+		<!-- FICHIERS UPLOADING --> 
+		   <!-- Apache Commons Upload --> 
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.2.2</version>
+		</dependency>
+		
+		<!-- Apache Commons Upload --> 
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.3</version>
+		</dependency>
+
+
+
+
+		<!--HIBERNATE ET DEPENDANCES UTILES-->
+		<!--SLF4J PERMET LES LOGS SYSTEME MAIS AUSSI CERTAINES INJECTIONS DE DEPENDANCES-->
+		 <dependency>
+			  <groupId>org.slf4j</groupId>
+			  <artifactId>slf4j-api</artifactId>
+			  <version>1.6.1</version>
+		 </dependency>
+		 <dependency>
+			  <groupId>org.slf4j</groupId>
+			  <artifactId>slf4j-log4j12</artifactId>
+			  <version>1.6.1</version>
+		 </dependency>
+		 <!--Gestion des transactions-orm-persistance par spring/javax-->
+		 <dependency>
+		      <groupId>org.springframework</groupId>
+		      <artifactId>spring-tx</artifactId>
+		      <version>${spring.version}</version>
+		 </dependency>
+		 <dependency>
+		      <groupId>org.springframework</groupId>
+		      <artifactId>spring-orm</artifactId>
+		      <version>${spring.version}</version>
+		 </dependency>
+		 <dependency>
+			<groupId>javax.transaction</groupId>
+			<artifactId>jta</artifactId>
+			<version>1.1</version>
+	   	 </dependency>		 
+		 <dependency>
+		      <groupId>javax.persistence</groupId>
+		      <artifactId>persistence-api</artifactId>
+		      <version>1.0</version>
+		 </dependency>
+		 <!--Dependances hibernate-->
+		 <dependency>
+		      <groupId>org.hibernate</groupId>
+		      <artifactId>hibernate-entitymanager</artifactId>
+		      <version>3.3.1.ga</version>
+		 </dependency>
+		 <dependency>
+		      <groupId>org.hibernate</groupId>
+		      <artifactId>hibernate-annotations</artifactId>
+		      <version>3.3.0.ga</version>
+		 </dependency>  
+		 <dependency>
+		      <groupId>org.hibernate</groupId>
+		      <artifactId>hibernate-validator</artifactId>
+		      <version>3.0.0.ga</version>
+		 </dependency>  
+	     <dependency>
+	          <groupId>org.hibernate</groupId>
+	          <artifactId>hibernate</artifactId>
+	          <version>3.2.2.ga</version>
+	          <exclusions>
+	              <exclusion>
+	                  <groupId>asm</groupId>
+	                  <artifactId>asm</artifactId>
+	              </exclusion>
+	              <exclusion>
+	                  <groupId>asm</groupId>
+	                  <artifactId>asm-attrs</artifactId>
+	              </exclusion>
+	              <exclusion>
+	                  <groupId>cglib</groupId>
+	                  <artifactId>cglib</artifactId>
+	              </exclusion>
+	          </exclusions>
+	     </dependency>  
+  		 <!--HIBERNATE ET DEPENDANCES UTILES-->
+
+
+
+
+		<!-- Spring Unit test -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${spring.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>com.springsource.org.apache.commons.beanutils</artifactId>
+					<groupId>org.apache.commons</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!-- SPRING SECURITY -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-taglibs</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!-- Reader OpenCSV -->
+		<!-- permet de parser un fichier csv -->
+		<dependency>
+			<groupId>net.sf.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium.client-drivers</groupId>
+			<artifactId>selenium-java-client-driver</artifactId>
+			<version>1.0.2</version>
+		</dependency>
+
+		<!-- JAVAX JSON MAPPER -->
+		<dependency>
+		  <groupId>org.codehaus.jackson</groupId> 
+		  <artifactId>jackson-jaxrs</artifactId> 
+		  <version>1.6.3</version> 
+		</dependency>		
+
+	</dependencies>
+
+	<build>
+
+		<!-- Bug eclipse IDE : Pour supprimer erreurs sous eclipse sur pom.xml -->
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>org.codehaus.mojo</groupId>
+										<artifactId>sql-maven-plugin</artifactId>
+										<version>1.5</version>
+										<goals>
+											<goal>execute</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore />
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+
+		<plugins>
+
+			<!-- Plugin pour recuperer des proprietes d'un autre fichier et les utiliser 
+				dans maven sous forme de variables Permet d'éviter la duplication de configuration, 
+				réduit risque erreur -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>properties-maven-plugin</artifactId>
+				<version>1.0-alpha-2</version>
+				<executions>
+					<execution>
+						<phase>initialize</phase>
+						<goals>
+							<goal>read-project-properties</goal>
+						</goals>
+						<configuration>
+							<files>
+								<file>${config.dir}/dataBaseConnectivity.properties</file>
+							</files>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<!-- Plugin pour gerer les data de la base de données - dès qu'on passe 
+				par la phase de tests les scripts sont executés Avantages : - centralisation 
+				des données (pas de tests unitaires pollués - standardisation de nos données -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>sql-maven-plugin</artifactId>
+				<version>1.5</version>
+				<dependencies>
+					<dependency>
+						<groupId>mysql</groupId>
+						<artifactId>mysql-connector-java</artifactId>
+						<version>5.0.5</version>
+					</dependency>
+				</dependencies>
+				<configuration>
+					<driver>${database.driver}</driver>
+					<url>${database.url}</url>
+					<username>${database.user}</username>
+					<password>${database.password}</password>
+					<delimiter>;</delimiter>
+					<delimiterType>normal</delimiterType>
+					<keepFormat>true</keepFormat>
+					<skip>${maven.test.skip}</skip>
+					<autocommit>true</autocommit>
+				</configuration>
+				<executions>
+					<execution>
+						<id>insert-data</id>
+						<phase>process-test-resources</phase>
+						<goals>
+							<goal>execute</goal>
+						</goals>
+						<configuration>
+							<autocommit>true</autocommit>
+							<srcFiles>
+								<srcFile>${database.scripts.dir}/mcd.sql</srcFile>
+								<srcFile>${database.scripts.dir}/insert-data.sql</srcFile>
+							</srcFiles>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.12</version>
+				<configuration>
+					<excludes>
+						<exclude>${selenium.tests.dir}</exclude>
+					</excludes>
+					<additionalClasspathElements>
+						<additionalClasspathElement>./src/main/webapp</additionalClasspathElement>
+					</additionalClasspathElements>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-failsafe-plugin</artifactId>
+				<version>2.7.2</version>
+				<configuration>
+					<reportsDirectory>${basedir}/target/surefire-reports</reportsDirectory>
+					<includes>
+ 						<include>${selenium.tests.dir}</include>
+						<include>com/miage/crm365/selenium/TestAdministration.java</include>
+					</includes>
+					<systemPropertyVariables>
+						<jetty.port>${jetty.port}</jetty.port>
+						<jetty.context>${project.artifactId}</jetty.context>
+					</systemPropertyVariables>
+				</configuration>
+				<executions>
+					<execution>
+						<id>integration-test</id>
+						<goals>
+							<goal>integration-test</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>verify</id>
+						<goals>
+							<goal>verify</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>selenium-maven-plugin</artifactId>
+				<version>1.0.1</version>
+				<executions>
+					<execution>
+						<id>start</id>
+						<phase>pre-integration-test</phase>
+						<goals>
+							<goal>start-server</goal>
+						</goals>
+						<configuration>
+							<background>true</background>
+						</configuration>
+					</execution>
+					<execution>
+						<id>stop</id>
+						<phase>post-integration-test</phase>
+						<goals>
+							<goal>stop-server</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.mortbay.jetty</groupId>
+				<artifactId>maven-jetty-plugin</artifactId>
+				<version>6.1.10</version>
+				<configuration>
+					<scanIntervalSeconds>1</scanIntervalSeconds>
+					<stopKey>foo</stopKey>
+					<stopPort>9999</stopPort>
+					<webAppSourceDirectory>src/main/webapp/</webAppSourceDirectory>
+					<connectors>
+						<connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
+							<port>${jetty.port}</port>
+							<maxIdleTime>60000</maxIdleTime>
+						</connector>
+					</connectors>
+				</configuration>
+				<executions>
+					<execution>
+						<id>start-jetty</id>
+						<phase>pre-integration-test</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<scanIntervalSeconds>0</scanIntervalSeconds>
+							<daemon>true</daemon>
+						</configuration>
+					</execution>
+					<execution>
+						<id>stop-jetty</id>
+						<phase>post-integration-test</phase>
+						<goals>
+							<goal>stop</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

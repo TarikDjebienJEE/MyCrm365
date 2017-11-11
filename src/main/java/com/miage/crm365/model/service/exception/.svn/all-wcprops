@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/service/exception
+END
+CustomerNotExistingException.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/service/exception/CustomerNotExistingException.java
+END
+CustomerColumnNotExistException.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/service/exception/CustomerColumnNotExistException.java
+END
+EventTypeNotExistingException.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/service/exception/EventTypeNotExistingException.java
+END

@@ -1,0 +1,110 @@
+####################################################
+#     FICHIER D'INTERNATIONALISATION               #
+#          Objet  : tout messages hors exceptions  #
+#          Langue : Francais                       #
+#          Locale : FR                             #
+#          Author : tarik DJEBIEN                  #
+####################################################
+test.language=international application
+hideMenu=Cacher Menu
+title=Bienvenue dans CRM 365
+annuler=Annuler
+search=Rechercher
+saveAll= Sauvegarder les modification
+addRow=Ajouter une ligne
+deleteRow=Supprimer ligne
+eventGroup=GESTION DES EVENEMENTS
+eventGroup-automated=EVENEMENTS AUTOMATISES
+eventGroup-manual=EVENEMENTS MANUELS
+eventGroup-manualInput=SAISIE MANUELLE
+actionGroup=GESTION DES ACTIONS
+actionGroup-triggerRules=CONFIGURATION
+actionGroup-todo=LISTE DE TACHES
+reportingGroup=REPORTING
+reporting-event=EVENEMENTS
+reporting-action=ACTIONS
+insertOk=ajouté avec succés
+
+actionToDoTitle=Liste des actions à  effectuer
+actionCreationTitle=Création d'actions
+actionTriggerCreationTitle=Création de déclencheurs d'actions
+
+
+event.automatedImportEventFromCsv=IMPORTATION D'EVENEMENTS DEPUIS UN FICHIER
+csv-file=Fichier csv
+event.automatedImportEventFromCsv.resultat=Resultat insertion
+event.automatedImportEventFromCsv.rowInserted= (evenement et evenements parametres) inserés
+event.eventAllDownloadTemplateFile = TELECHARGEMENT FICHIER TEMPLATE
+
+action.generateTasks=Genere les taches
+action.generateTasks.tasksGenerated= taches generees avec succes
+
+workflow.task.creationDate=Date de création
+workflow.task.description=Description
+workflow.task.user=Affectée
+workflow.task.bookTask=Affecter
+workflow.task.done=Réalisée
+workflow.task.notification.done=Tâche validée
+workflow.task.notification.book=Tâche affectée
+workflow.task.customer=Client
+
+customer.help.search=Recherche un client
+customer-search=RECHERCHE DE CLIENTS
+customer-file-input=IMPORT CLIENTS DEPUIS UN FICHIER
+customer.rowInserted= clients inserés
+customer.id=ID
+customer.companyId=Client NÂ°
+customer.name=Nom
+customer.surname=Prénom
+customer.homephone=Domicile
+customer.mobilephone=Mobile
+customer.workphone=Travail
+customer.subdate=Date inscription
+customer.email=Email
+customer.address=Adresse
+customer.customerDownloadTemplateFile=TELECHARGER FICHIER TEMPLATE CLIENT
+customerAlias.customizationManagement=GESTION CUSTOMISATION CLIENTS
+customer.profile-customization=CUSTOMISATION DES PROFILS CLIENTS
+
+# Administration de CRM 365
+administrationGroup=ADMINISTRATION
+admin.administrateUser=GESTION DES UTILISATEURS
+admin.administrateTeam=GESTION DES EQUIPES
+admin.Tab.UserCreation=Création d'un utilisateur
+admin.Tab.UserManagement=Management des utilisateurs
+admin.createUser.title=Remplissez le formulaire pour creer un nouvel utilisateur
+admin.createUser.userName=Nom utilisateur :
+admin.createUser.passWord=Mot de passe :
+admin.createUser.role=Role :
+admin.createUser.team=Equipe :
+admin.manageUser.title=Manager vos utilisateurs
+admin.manageUser.userName=Login
+admin.manageUser.passWord=Mot de passe
+admin.manageUser.enabled=Actif
+admin.manageUser.role=Role
+admin.manageUser.team=Equipe
+admin.manageUser.save=Enregistrer
+admin.manageUser.delete=Supprimer
+admin.administrationServiceCreate=L'utilisateur a été crée
+admin.administrationServiceSave=L'utilisateur a été modifié
+admin.administrationServiceDeleteUser=L'utilisateur a été supprimé
+
+admin.Tab.TeamCreation=Crétion d'une équipe
+admin.Tab.TeamManagement=Management des équipes
+admin.createTeam.title=Remplissez le formulaire pour creer une nouvelle équipe
+admin.createTeam.titleTeams=Equipes existantes : 
+admin.createTeam.description=Description :
+admin.manageTeam.title=Manager vos équipes
+admin.manageTeam.teamId=Identifiant de l'équipe
+admin.manageTeam.teamDescription=Description de l'équipe
+admin.manageTeam.users=Utilisateurs
+admin.manageTeam.numberOfMembers=Nombre d'utilisateurs
+admin.manageTeam.delete=Supprimer
+admin.manageTeam.save=Enregistrer
+admin.manageTeam.addUser=Ajouter un utilisateur
+admin.manageTeam.deleteUser=Supprimer un utilisateur
+admin.administrationServiceSaveTeam=La team a été crée
+admin.administrationServiceDeleteTeam=La team a été supprimé
+admin.administrationServiceUpdateTeam=La team a été modifié
+admin.administrationServiceAddUserInTeam=L'utilisateur a été ajouté dans l'équipe
+admin.administrationServiceDeletedUserInTeam=L'utilisateur a été supprimé de l'équipe

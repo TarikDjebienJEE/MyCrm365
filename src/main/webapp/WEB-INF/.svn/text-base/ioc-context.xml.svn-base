@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Importation des XML Schema des namespaces de Spring -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context.xsd
+	">
+
+	<!--******************* SPRING IOC/JDBC CONFIGURATION *************** -->
+
+	<!-- Activation de la detection des annotations Spring -->
+	<context:annotation-config />
+
+	<!-- Il faut preciser dans la configuration le package dans lequel les composants 
+		annote doivent etres recherches -->
+	<context:component-scan base-package="com.miage.crm365" />
+
+	<!-- Chargement des fichiers de configuration pour la connexion a la base 
+		de données -->
+	<context:property-placeholder
+		location="/WEB-INF/dataBaseConnectivity.properties" />
+
+
+	<!-- Declaration de la datasource JDBC pour l'environnement de production -->
+	<!-- La dataSource de apacheCommon DBCP supporte les montée en charge de 
+		connexions multiples -->
+	<!-- cependant, il y a un probleme avec les tests d'integration selenium, 
+		elle ne passe pas -->
+	<bean id="envProdDataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="${database.driver}" />
+		<property name="url" value="${database.url}" />
+		<property name="username" value="${database.user}" />
+		<property name="password" value="${database.password}" />
+	</bean>
+
+	<!-- Declaration de la datasource JDBC pour l'environnement de developpement -->
+	<bean id="envDevDataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="${database.driver}" />
+		<property name="url" value="${database.url}" />
+		<property name="username" value="${database.user}" />
+		<property name="password" value="${database.password}" />
+	</bean>
+	
+	
+	
+	<!-- *****************Declaration d'un bean permettant l'utilisation de fichier; la taille a -1 pour eviter les exceptions concernant les fichiers volumineux******************** -->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver" >
+		<property name="maxUploadSize" value="-1"/>
+	</bean>
+	
+	
+	
+	
+	
+	<!-- ***************** INTERNATIONALISATION : I18N ******************** -->
+
+	<!-- Liste des ressources properties permettant l'internationalisation -->
+	<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+	    <property name="basenames">
+	        <list>
+	            <value>/I18N/messages</value>
+	            <value>/I18N/exceptions</value>                
+	        </list>
+	    </property>
+	    <property name="cacheSeconds"><value>-1</value></property>
+		<property name="fallbackToSystemLocale" value="false" />
+	    <property name="defaultEncoding" value="UTF-8" />
+	    <property name="fileEncodings" value="UTF-8" />
+	</bean>
+	
+
+	<bean id="localeResolver" class="org.springframework.web.servlet.i18n.CookieLocaleResolver"/>
+	
+	<!--La classe LocaleChangeInterceptor va intercepter les changements au niveau de la locale-->
+	<bean id="localeChangeInterceptor" class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+	    <property name="paramName" value="lang" />
+	</bean>
+	
+	
+	<!-- Interception des urls, annotations et controllers  -->
+	<bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="interceptors">
+			<list>
+				<ref bean="localeChangeInterceptor"/>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="handlerMapping" class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
+	    <property name="interceptors">
+	        <ref bean="localeChangeInterceptor" />
+	    </property>
+	</bean>	 
+
+	<bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping" >
+		<property name="interceptors">
+		   <list>
+			<ref bean="localeChangeInterceptor" />
+		   </list>
+		</property>
+	</bean>
+ 
+	<!-- ***************** INTERNATIONALISATION : I18N ******************** -->
+
+</beans>

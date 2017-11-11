@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/factory
+END
+IEventTypeFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/factory/IEventTypeFactory.java
+END
+ITaskFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/factory/ITaskFactory.java
+END
+IValueTriggeredFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/factory/IValueTriggeredFactory.java
+END
+IActionFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/factory/IActionFactory.java
+END
+ICsvReaderFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/factory/ICsvReaderFactory.java
+END
+IEventFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/factory/IEventFactory.java
+END
+IUserTeamFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/factory/IUserTeamFactory.java
+END
+ICustomerTriggerFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/factory/ICustomerTriggerFactory.java
+END
+IUserFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/factory/IUserFactory.java
+END
+ITeamFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/factory/ITeamFactory.java
+END
+IEventParameterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/factory/IEventParameterFactory.java
+END
+IEventParameterValueFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/factory/IEventParameterValueFactory.java
+END
+IActionTriggerFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/factory/IActionTriggerFactory.java
+END

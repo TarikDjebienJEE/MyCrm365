@@ -1,0 +1,168 @@
+10
+
+dir
+17
+https://my-crm-365.googlecode.com/svn/trunk/myCRM365/src/main/webapp/CharteGraphiqueCRM365/jqueryui/development-bundle/demos
+https://my-crm-365.googlecode.com/svn
+
+
+
+2012-07-14T18:44:38.561587Z
+16
+antoine.craske@gmail.com
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+0038f941-cecd-57b3-3720-c153b7e63e76
+
+accordion
+dir
+
+addClass
+dir
+
+animate
+dir
+
+autocomplete
+dir
+
+button
+dir
+
+datepicker
+dir
+
+demos.css
+file
+
+
+
+
+2012-07-22T12:58:17.000000Z
+2e2ec04700af4ac5681a956cfe405c47
+2012-07-14T18:44:38.561587Z
+16
+antoine.craske@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14338
+
+dialog
+dir
+
+draggable
+dir
+
+droppable
+dir
+
+effect
+dir
+
+hide
+dir
+
+images
+dir
+
+index.html
+file
+
+
+
+
+2012-07-22T12:58:18.000000Z
+98ca3dae7fb08e7bd0cd733579b939f3
+2012-07-14T18:44:38.561587Z
+16
+antoine.craske@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14554
+
+position
+dir
+
+progressbar
+dir
+
+removeClass
+dir
+
+resizable
+dir
+
+selectable
+dir
+
+show
+dir
+
+slider
+dir
+
+sortable
+dir
+
+switchClass
+dir
+
+tabs
+dir
+
+toggle
+dir
+
+toggleClass
+dir
+

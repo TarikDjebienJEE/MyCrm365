@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Importation des XML Schema des namespaces de Spring -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context.xsd
+	">
+
+	<!--******************* HIBERNATE CONFIGURATION *************** -->
+
+	<!--
+	    Le TransactionManager est le bean qui va s’occuper 
+	    de gérer les transactions vers votre base de données de manière transparente. 
+	 -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<!--La SessionFactory s’occupe de fournir les sessions à l'application quand 
+		des ordres Hibernate s’éxécutent. -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		
+		<property name="dataSource" ref="envDevDataSource" />
+		
+		<!-- Les classes de domain (POJO) annotees pour etre reconnu par hibernate -->
+		<property name="annotatedClasses">
+			<list>
+				<value>com.miage.crm365.model.entity.User</value>
+				<value>com.miage.crm365.model.entity.Customer</value>
+				<value>com.miage.crm365.model.entity.Event</value>
+				<value>com.miage.crm365.model.entity.EventParameter</value>
+				<value>com.miage.crm365.model.entity.EventParameterValue</value>
+				<value>com.miage.crm365.model.entity.EventType</value>
+				<value>com.miage.crm365.model.entity.Action</value>
+				<value>com.miage.crm365.model.entity.ActionTrigger</value>
+				<value>com.miage.crm365.model.entity.CustomerTrigger</value>
+				<value>com.miage.crm365.model.entity.Task</value>
+				<value>com.miage.crm365.model.entity.Team</value>
+				<value>com.miage.crm365.model.entity.UserTeam</value>
+				<value>com.miage.crm365.model.entity.Authorities</value>
+				<value>com.miage.crm365.model.entity.ValueTriggered</value>
+				<value>com.miage.crm365.model.entity.CustomerAlias</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+			    
+			    <!-- 
+			    hibernate.dialect: 
+			    Chaque SGDB utilise sa propre implémentation de SQL. 
+			    Il faut donc lui indiquer celui de notre SGDB, soit org.hibernate.dialect.MySQLDialect pour mysql.
+			     -->
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				
+				<!-- 
+				hibernate.show_sql: 
+				Force Hibernate à afficher toutes les requêtes qu’il exécute. 
+				Ce paramètre est très utile pour le débuggage.
+				 -->
+				<prop key="hibernate.show_sql">true</prop>
+				
+				<!-- 
+				hibernate.hdm2ddl.auto: 
+				En fixant ce paramètre à « update », nous indiquons à Hibernate qu’il doit mettre à jour 
+				le schéma de base de données à chaque démarrage de l’application. 
+				Il existe d’autres valeurs pour ce paramètre comme « create » qui force Hibernate à recréer 
+				la base de données à chaque démarrage.
+				 --> 
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+			</props>
+		</property>
+	</bean>
+
+</beans>

@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/dao/impl
+END
+EventParameterValueDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/dao/impl/EventParameterValueDAO.java
+END
+ActionTriggerDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/dao/impl/ActionTriggerDAO.java
+END
+TaskDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/dao/impl/TaskDAO.java
+END
+ValueTriggeredDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/dao/impl/ValueTriggeredDAO.java
+END
+UserTeamDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/dao/impl/UserTeamDAO.java
+END
+UserDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/dao/impl/UserDAO.java
+END
+EventParameterDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/dao/impl/EventParameterDAO.java
+END
+CustomerAliasDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/dao/impl/CustomerAliasDAO.java
+END
+EventTypeDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/dao/impl/EventTypeDAO.java
+END
+ActionDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/dao/impl/ActionDAO.java
+END
+EventDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/dao/impl/EventDAO.java
+END
+CustomerTriggerDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/dao/impl/CustomerTriggerDAO.java
+END
+TeamDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/dao/impl/TeamDAO.java
+END
+CustomerDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/dao/impl/CustomerDAO.java
+END
+AdministrationDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/dao/impl/AdministrationDAO.java
+END

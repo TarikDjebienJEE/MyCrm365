@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/model/service/impl
+END
+TestActionServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/model/service/impl/TestActionServiceImpl.java
+END
+TestEventServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/model/service/impl/TestEventServiceImpl.java
+END
+AbstractListClassMethodTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/model/service/impl/AbstractListClassMethodTest.java
+END
+TestRealCallingActionService.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/model/service/impl/TestRealCallingActionService.java
+END
+TestReportingServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/model/service/impl/TestReportingServiceImpl.java
+END
+TestCustomerFileInputService.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/model/service/impl/TestCustomerFileInputService.java
+END
+TestEventManualServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/model/service/impl/TestEventManualServiceImpl.java
+END
+TestEventAllImportFromCsvService.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/model/service/impl/TestEventAllImportFromCsvService.java
+END
+TestActionConfigurationServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/model/service/impl/TestActionConfigurationServiceImpl.java
+END
+TestCustomerService.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/model/service/impl/TestCustomerService.java
+END
+TestAdministrationServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/model/service/impl/TestAdministrationServiceImpl.java
+END
+TestCustomerAliasServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/model/service/impl/TestCustomerAliasServiceImpl.java
+END
+TestWorkflowServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/model/service/impl/TestWorkflowServiceImpl.java
+END
+TestAdministrationServiceTeamImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/model/service/impl/TestAdministrationServiceTeamImpl.java
+END

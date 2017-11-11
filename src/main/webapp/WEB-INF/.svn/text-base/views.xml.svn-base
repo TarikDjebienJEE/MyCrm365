@@ -1,0 +1,77 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <!-- En spring, il existe des bean abstrait comme en Java il existe des classe abstraites -->
+	<bean id="basePage" abstract="true"
+		class="org.springframework.web.servlet.view.InternalResourceView" />
+		
+    <!-- On peut alors herite du bean abstrait, le extends en Spring se traduisant par parent -->
+	<bean id="LOGIN" parent="basePage">
+	  <property name="url" value="/WEB-INF/jsp/login.jsp" />
+	</bean>
+
+    <!-- On retrouve alors le polymorphisme, mon bean HOME est un bean InternalResourceView  -->
+	<bean id="HOME" parent="basePage">
+		<property name="url" value="/WEB-INF/jsp/home.jsp" />
+	</bean>
+
+	<bean id="EVENT_FILE_INPUT" parent="basePage">
+		<property name="url" value="/WEB-INF/jsp/event/eventFileInput.jsp" />
+	</bean>	
+	
+	<bean id="EVENT_MGT" parent="basePage">
+		<property name="url" value="/WEB-INF/jsp/event/eventForm.jsp" />
+	</bean>
+	
+	<bean id="EVENT_MANUAL" parent="basePage">
+		<property name="url" value="/WEB-INF/jsp/event/eventManualForm.jsp" />
+	</bean>
+	
+	<bean id="ACTION_MGT" parent="basePage">
+		<property name="url" value="/WEB-INF/jsp/action/actionForm.jsp" />
+	</bean>
+	
+	<bean id="WORKFLOW" parent="basePage">
+		<property name="url" value="/WEB-INF/jsp/action/actionToDo.jsp" />
+	</bean>
+		
+	<bean id="EVENT_REPORTING" parent="basePage">
+		<property name="url" value="/WEB-INF/jsp/reporting/eventReporting.jsp" />
+	</bean>	
+	
+	<bean id="ACTION_REPORTING" parent="basePage">
+		<property name="url" value="/WEB-INF/jsp/reporting/actionReporting.jsp" />
+	</bean>	
+	
+	<bean id="CUSTOMER_SEARCH" parent="basePage">
+		<property name="url" value="/WEB-INF/jsp/customer/customerSearch.jsp" />
+	</bean>	
+	
+	<bean id="CUSTOMER_DETAIL" parent="basePage">
+		<property name="url" value="/WEB-INF/jsp/customer/customerDetail.jsp" />
+	</bean>
+	
+	<bean id="ADMINISTRATION_USER" parent="basePage">
+		<property name="url" value="/WEB-INF/jsp/admin/administrationUser.jsp" />
+	</bean>
+	
+	<bean id="ADMINISTRATION_TEAM" parent="basePage">
+		<property name="url" value="/WEB-INF/jsp/admin/administrationTeam.jsp" />
+	</bean>
+
+	<bean id="CUSTOMER_FILE_INPUT" parent="basePage">
+		<property name="url" value="/WEB-INF/jsp/customer/customerFileInput.jsp" />
+	</bean>	
+	
+	<bean id="CUSTOMER_CUSTOMIZATION" parent="basePage">
+		<property name="url" value="/WEB-INF/jsp/customer/customerCustomization.jsp" />
+	</bean>	
+	
+	
+	<bean id="TASK_GENERATED" parent="basePage">
+		<property name="url" value="/WEB-INF/jsp/task/taskGenerated.jsp" />
+	</bean>	
+
+</beans>

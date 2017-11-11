@@ -1,0 +1,51 @@
+###########################################################################
+#                         CONFIGURATION DE LOG4J                          #
+#                         AUTHOR : Tarik DJEBIEN                          #
+###########################################################################
+
+
+# *********************** DEFINITION DES APPENDERS ************************
+
+# CONSOLE est l'Appender de type console
+log4j.appender.CONSOLE=org.apache.log4j.ConsoleAppender
+
+# FICHIER est l'Appender pour la journalisation par fichier externe
+log4j.appender.FICHIER=org.apache.log4j.RollingFileAppender
+# fichier de stockage des traces avec l'attribut File
+log4j.appender.FICHIER.File=E:/LOGS_CRM365/crm365.log
+# la taille maximale du fichier avant rotation (la relation est utilisee pour conserver plusieurs fichier de journalisation) 
+log4j.appender.FICHIER.MaxFileSize=200KB
+# le nombre de fichiers conserves
+log4j.appender.FICHIER.MaxBackupIndex=2
+
+# HTML est l'Appender pour la journalisation par fichier HTML
+log4j.appender.HTML=org.apache.log4j.RollingFileAppender
+log4j.appender.HTML.File=E:/LOGS_CRM365/crm365.html
+log4j.appender.HTML.MaxFileSize=300KB
+log4j.appender.HTML.MaxBackupIndex=2
+
+
+# *********************** DEFINITION DES LAYOUTS **************************
+log4j.appender.CONSOLE.layout=org.apache.log4j.PatternLayout
+log4j.appender.FICHIER.layout=org.apache.log4j.PatternLayout
+log4j.appender.HTML.layout=org.apache.log4j.HTMLLayout
+
+# Definition du format des messages sous la forme : 2012-03-13 17:54:34 DEBUG [Main] Hello World
+log4j.appender.CONSOLE.layout.ConversionPattern=%d %-5p %c -%F:%L - %m%n
+log4j.appender.FICHIER.layout.ConversionPattern=%d %-5p %c -%F:%L - %m%n
+log4j.appender.HTML.layout.LocationInfo=true
+log4j.appender.HTML.layout.Title=Logs CRM 365
+log4j.appender.HTML.layout.ConversionPattern=%d %-5p %c -%F:%L - %m%n
+
+# *********************** DEFINTION DES LOGGER *****************************
+
+# Rappel sur la priorite des niveaux ( DEBUG > INFO > WARN > ERROR > FATAL)
+
+# Ici , je definit mon log principal dans le paquet rootLogger
+# je positionne un niveau INFO donc tout les logs de priorite inferieur seront pris en compte
+# et je redirige vers mon appender CONSOLE
+log4j.rootLogger=INFO, CONSOLE
+
+# logger pour le paquet stockage
+# dans notre fichier, on trace que les les WARN, ERROR et FATAL
+log4j.logger.stockage=WARN, FICHIER, HTML

@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/selenium
+END
+TestI18n.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/selenium/TestI18n.java
+END
+TestAdministration.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/selenium/TestAdministration.java
+END
+TestInsertEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/selenium/TestInsertEvent.java
+END
+TestActionConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/selenium/TestActionConfiguration.java
+END
+TestEventManual.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/selenium/TestEventManual.java
+END
+TestGenerateTasks.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/selenium/TestGenerateTasks.java
+END
+TestEventFileInput.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/selenium/TestEventFileInput.java
+END
+TestCustomerAlias.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/selenium/TestCustomerAlias.java
+END
+TestCustomerFileInput.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/selenium/TestCustomerFileInput.java
+END
+TestReporting.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/selenium/TestReporting.java
+END
+TestInsertEventParameters.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/selenium/TestInsertEventParameters.java
+END
+TestCustomerSearch.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/selenium/TestCustomerSearch.java
+END
+TestLogin.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/selenium/TestLogin.java
+END
+AbstractSeleniumTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/selenium/AbstractSeleniumTest.java
+END
+TestSecurity.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/selenium/TestSecurity.java
+END
+TestWorkflow.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/selenium/TestWorkflow.java
+END

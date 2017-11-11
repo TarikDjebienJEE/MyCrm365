@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/WEB-INF
+END
+task-context.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/WEB-INF/task-context.xml
+END
+mvc-context.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/WEB-INF/mvc-context.xml
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/WEB-INF/log4j.properties
+END
+views.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/WEB-INF/views.xml
+END
+ioc-context.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/WEB-INF/ioc-context.xml
+END
+security-context.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/WEB-INF/security-context.xml
+END
+aop-context.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/WEB-INF/aop-context.xml
+END
+hibernate-context.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/WEB-INF/hibernate-context.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/20/trunk/myCRM365/src/main/webapp/WEB-INF/web.xml
+END
+dataBaseConnectivity.properties
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/WEB-INF/dataBaseConnectivity.properties
+END

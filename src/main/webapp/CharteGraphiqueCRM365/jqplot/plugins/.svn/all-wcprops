@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/CharteGraphiqueCRM365/jqplot/plugins
+END
+jqplot.donutRenderer.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/CharteGraphiqueCRM365/jqplot/plugins/jqplot.donutRenderer.min.js
+END
+jqplot.pointLabels.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/CharteGraphiqueCRM365/jqplot/plugins/jqplot.pointLabels.min.js
+END
+jqplot.pieRenderer.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/CharteGraphiqueCRM365/jqplot/plugins/jqplot.pieRenderer.min.js
+END
+jqplot.dateAxisRenderer.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/CharteGraphiqueCRM365/jqplot/plugins/jqplot.dateAxisRenderer.min.js
+END

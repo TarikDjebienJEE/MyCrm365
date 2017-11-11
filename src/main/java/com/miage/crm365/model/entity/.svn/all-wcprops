@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/entity
+END
+EventParameter.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/entity/EventParameter.java
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/entity/User.java
+END
+UserTeam.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/entity/UserTeam.java
+END
+ValueTriggered.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/entity/ValueTriggered.java
+END
+Task.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/entity/Task.java
+END
+EventParameterValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/entity/EventParameterValue.java
+END
+ActionTrigger.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/entity/ActionTrigger.java
+END
+Authorities.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/entity/Authorities.java
+END
+Customer.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/entity/Customer.java
+END
+Team.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/entity/Team.java
+END
+Event.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/entity/Event.java
+END
+CustomerTrigger.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/entity/CustomerTrigger.java
+END
+Action.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/entity/Action.java
+END
+EventType.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/entity/EventType.java
+END
+CustomerAlias.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/entity/CustomerAlias.java
+END

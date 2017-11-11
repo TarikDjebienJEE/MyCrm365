@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/util 
+       http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+	<!-- Indique quel package Spring MVC doit scanner pour detecter les annotation Controller -->
+	<context:component-scan base-package="com.miage.crm365.controller" />
+
+	<!-- Converter JSON pour AJAX -->
+	<bean id="messageAdapter" class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+        <property name="messageConverters">
+            <util:list>
+                <!-- Support JSON --> 
+                <bean class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter"/>
+            </util:list>
+        </property>
+    </bean>
+
+	<!-- Configuration de la resolution des vues par spring MVC -->
+
+	<!-- Resolution des vues explicite en les declarant dans un fichier XML -->
+	<bean id="jspXMLViewResolver" class="org.springframework.web.servlet.view.XmlViewResolver">
+	  <property name="order" value="1" />
+	  <property name="location" value="/WEB-INF/views.xml"/>
+	</bean>
+
+</beans>

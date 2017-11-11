@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/WEB-INF/jsp/event
+END
+eventForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/WEB-INF/jsp/event/eventForm.jsp
+END
+eventFileInput.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/WEB-INF/jsp/event/eventFileInput.jsp
+END
+eventManualForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/WEB-INF/jsp/event/eventManualForm.jsp
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/WEB-INF/jsp/reporting
+END
+actionReporting.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/WEB-INF/jsp/reporting/actionReporting.jsp
+END
+eventReporting.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/WEB-INF/jsp/reporting/eventReporting.jsp
+END

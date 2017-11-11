@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/WEB-INF/jsp/customer
+END
+customerDetail.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/WEB-INF/jsp/customer/customerDetail.jsp
+END
+customerFileInput.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/WEB-INF/jsp/customer/customerFileInput.jsp
+END
+customerCustomization.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/WEB-INF/jsp/customer/customerCustomization.jsp
+END
+customerSearch.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/WEB-INF/jsp/customer/customerSearch.jsp
+END

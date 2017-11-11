@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/controller
+END
+WorkflowController.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/controller/WorkflowController.java
+END
+CustomerController.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/controller/CustomerController.java
+END
+AdministrationController.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/controller/AdministrationController.java
+END
+ReportingController.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/controller/ReportingController.java
+END
+EventManuelController.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/controller/EventManuelController.java
+END
+EventController.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/controller/EventController.java
+END
+LoginController.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/controller/LoginController.java
+END
+ActionController.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/controller/ActionController.java
+END

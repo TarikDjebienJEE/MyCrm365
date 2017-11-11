@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/service
+END
+IReportingService.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/service/IReportingService.java
+END
+IEventAllImportFromCsvService.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/service/IEventAllImportFromCsvService.java
+END
+IActionConfigurationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/service/IActionConfigurationService.java
+END
+IEventManualService.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/service/IEventManualService.java
+END
+ICustomerFileInputService.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/service/ICustomerFileInputService.java
+END
+IAdministrationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/service/IAdministrationService.java
+END
+ICustomerService.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/service/ICustomerService.java
+END
+IWorkflowService.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/service/IWorkflowService.java
+END
+IFileReaderService.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/service/IFileReaderService.java
+END
+ICustomerAliasService.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/service/ICustomerAliasService.java
+END
+IMessageI18nService.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/service/IMessageI18nService.java
+END
+IActionService.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/service/IActionService.java
+END
+ICsvUtilService.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/service/ICsvUtilService.java
+END
+IEventService.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/model/service/IEventService.java
+END

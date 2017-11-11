@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/BDD
+END
+insert-data-patrimoine.sql
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/BDD/insert-data-patrimoine.sql
+END
+insert-data-bateaux.sql
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/BDD/insert-data-bateaux.sql
+END
+drop-data.sql
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/BDD/drop-data.sql
+END
+mcd.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/BDD/mcd.sql
+END
+insert-data.sql
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/16/trunk/myCRM365/src/main/webapp/BDD/insert-data.sql
+END

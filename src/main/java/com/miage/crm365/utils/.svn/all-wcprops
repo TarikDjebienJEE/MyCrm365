@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/utils
+END
+CustomerUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/utils/CustomerUtil.java
+END
+CollectionUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/utils/CollectionUtil.java
+END
+DateUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/utils/DateUtil.java
+END
+EventParameterClauseUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/utils/EventParameterClauseUtil.java
+END
+ValidationUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/utils/ValidationUtil.java
+END
+ComparisonUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/utils/ComparisonUtil.java
+END
+EncodingFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/utils/EncodingFilter.java
+END
+CRM365Constants.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/utils/CRM365Constants.java
+END
+CsvUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/16/trunk/myCRM365/src/main/java/com/miage/crm365/utils/CsvUtil.java
+END

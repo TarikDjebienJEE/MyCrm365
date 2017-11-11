@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/model/factory/impl
+END
+TestUserTeamFactoryImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/model/factory/impl/TestUserTeamFactoryImpl.java
+END
+TestTeamFactoryImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/model/factory/impl/TestTeamFactoryImpl.java
+END
+TestEventParameterValueFactoryImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/model/factory/impl/TestEventParameterValueFactoryImpl.java
+END
+TestActionTriggerFactoryImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/model/factory/impl/TestActionTriggerFactoryImpl.java
+END
+TestEventParameterFactoryImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/model/factory/impl/TestEventParameterFactoryImpl.java
+END
+TestEventTypeFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/model/factory/impl/TestEventTypeFactory.java
+END
+TestCsvReaderFactoryImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/model/factory/impl/TestCsvReaderFactoryImpl.java
+END
+TestTaskFactoryImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/model/factory/impl/TestTaskFactoryImpl.java
+END
+TestCustomerTriggerFactoryImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/model/factory/impl/TestCustomerTriggerFactoryImpl.java
+END
+TestValueTriggeredFactoryImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/model/factory/impl/TestValueTriggeredFactoryImpl.java
+END
+TestActionFactoryImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/model/factory/impl/TestActionFactoryImpl.java
+END
+TestEventFactoryImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/16/trunk/myCRM365/src/test/java/com/miage/crm365/model/factory/impl/TestEventFactoryImpl.java
+END
